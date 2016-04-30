@@ -28,7 +28,7 @@ abstract class AddonCore{
         if (!$this->addon_params){
             $addon = JSFactory::getTable('addon', 'jshop');
             $addon->loadAlias($this->addon_alias);
-            $this->addon_params = $addon->getParams();        
+            $this->addon_params = $addon->getParams();
         }
         return $this->addon_params;
     }
@@ -37,7 +37,7 @@ abstract class AddonCore{
         if (!$this->addon_id){
             $addon = JSFactory::getTable('addon', 'jshop');
             $addon->loadAlias($this->addon_alias);
-            $this->addon_id = $addon->id;        
+            $this->addon_id = $addon->id;
         }
         return $this->addon_id;
     }
@@ -64,12 +64,12 @@ abstract class AddonCore{
     }
     
     public function loadJs($extname = ''){
-        $document = JFactory::getDocument();        
+        $document = JFactory::getDocument();
         $document->addScript(JURI::root().'components/com_jshopping/js/addons/'.$this->addon_alias.$extname.'.js');
     }
     
     public function getPathImages(){
         return JURI::root().'components/com_jshopping/images/'.$this->addon_alias;
     }
-    
+
 }

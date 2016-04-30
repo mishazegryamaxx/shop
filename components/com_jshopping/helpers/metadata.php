@@ -64,15 +64,15 @@ class JshopHelpersMetadata{
 		self::metaData("checkout-address", 0, _JSHOP_CHECKOUT_ADDRESS, _JSHOP_CHECKOUT_ADDRESS);
 	}
 	
-	public static function checkoutPayment(){		
+	public static function checkoutPayment(){
 		self::metaData("checkout-payment", 0, _JSHOP_CHECKOUT_PAYMENT, _JSHOP_CHECKOUT_PAYMENT);
 	}
 	
-	public static function checkoutShipping(){		
+	public static function checkoutShipping(){
 		self::metaData("checkout-shipping", 0, _JSHOP_CHECKOUT_SHIPPING, _JSHOP_CHECKOUT_SHIPPING);
 	}
 	
-	public static function checkoutPreview(){		
+	public static function checkoutPreview(){
 		self::metaData("checkout-preview", 0, _JSHOP_CHECKOUT_PREVIEW, _JSHOP_CHECKOUT_PREVIEW);
 	}
 	
@@ -82,7 +82,7 @@ class JshopHelpersMetadata{
         appendPathWay(_JSHOP_CHECKOUT_FINISH);
 	}
 	
-	public static function content($page){		
+	public static function content($page){
 		switch($page){
             case 'agb':
                 $title = _JSHOP_AGB;
@@ -96,7 +96,7 @@ class JshopHelpersMetadata{
             case 'privacy_statement':
                 $title = _JSHOP_PRIVACY_STATEMENT;
             break;
-        }		
+        }
 		if (getThisURLMainPageShop()){
 			$pathway = $title;
 			$loadParams = 0;
@@ -119,7 +119,7 @@ class JshopHelpersMetadata{
         setMetaData($manufacturer->meta_title, $manufacturer->meta_keyword, $manufacturer->meta_description);
 	}
 	
-	public static function search(){		
+	public static function search(){
 		self::metaDataDependenMainPageShop('search', 1, _JSHOP_SEARCH, _JSHOP_SEARCH);
 	}
 	
@@ -234,27 +234,27 @@ class JshopHelpersMetadata{
 		self::metaData("all-products");
 	}
 	
-	public static function productsTophits(){		
+	public static function productsTophits(){
 		self::metaData("tophitsproducts");
 	}
 	
-	public static function productsToprating(){		
+	public static function productsToprating(){	
 		self::metaData("topratingproducts");
 	}
 	
-	public static function productsLabel(){		
+	public static function productsLabel(){	
 		self::metaData("labelproducts");
 	}
 	
-	public static function productsBestseller(){		
+	public static function productsBestseller(){
 		self::metaData("bestsellerproducts");
 	}
 	
-	public static function productsRandom(){		
+	public static function productsRandom(){
 		self::metaData("randomproducts");
 	}
 	
-	public static function productsLast(){		
+	public static function productsLast(){
 		self::metaData("lastproducts");
 	}
 
