@@ -7,7 +7,7 @@
 * @license      GNU/GPL
 */
 defined('_JEXEC') or die();
-
+die();
 jimport('joomla.application.component.model');
 JModelLegacy::addIncludePath(JPATH_COMPONENT.'/models');
 require_once(JPATH_COMPONENT_SITE."/lib/factory.php");
